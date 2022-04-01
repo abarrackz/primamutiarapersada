@@ -1,0 +1,427 @@
+:h@font-face {
+    font-family: 'Sabon';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sabon'), url('../font/Sabon_Roman.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sabon';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Sabon'), url('../font/Sabon_Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sabon';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Sabon'), url('../font/SabonBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sabon';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Sabon'), url('../font/SabonBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fontype Rounded';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fontype Rounded'), url('../font/FontypeRounded-rgJJ7.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Gabriel Sans Cd-Trial', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+body{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header-base{
+    display: block;
+    box-sizing: inherit;
+    border-bottom: solid 2px #01172F;
+}
+.sub-nav{
+    background-color: #01172F;
+    height: 15px;
+}
+.sub-nav-container{
+    max-width: 110vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-nav{
+    background-color: #033366;
+}
+.main-nav-wrap{
+    max-width: 140vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+}
+.nav-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.5vw;
+}
+.nav-logo-container img{
+    height: auto;
+    width: 6vw;
+}
+.nav-menu-container{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-menu-container ul li{
+    float: left;
+}
+.nav-menu-container ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+.nav-menu-container ul li a:hover{
+    display: block;
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+.dropbtn {
+    background-color:#033366;
+    display: block;
+    font-size: 0.9vw;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    border-radius:1vw;
+    background-color: white;
+    display: none;
+    position: absolute;
+    right: 5%;
+    min-width: 10vw;
+    overflow: auto;
+    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.6vw 0.8vw;
+    font-size: 0.8vw;
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;}
+#banner{
+    background-image: url(../image/main.background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Sabon";
+    font-size: 2vw;
+    text-shadow: 5px 5px #01172F;
+    color: white;
+    width: 100%;
+    height: 20vw;
+    border-bottom: solid 25px #021f3f;
+}
+#banner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+}
+.main-page{
+    background-color:#07033b ;
+    justify-content: center;
+    align-items: center;
+}
+#about-us{
+    color: white;
+    text-align: center;
+    margin: auto;
+    max-width: 110vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+#product{
+    font-family: 'Gabriel Sans Cd-Trial', sans-serif;
+    color: #002d5e;
+    text-align: center;
+    margin: auto;
+    max-width: 110vh;
+    font-size: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 10px;
+}
+.product-container-wrap{
+    padding-top: 1.25vw;
+    padding-bottom: 1.25vw;
+    max-width: 110vh;
+    display: flex;
+}
+.products-background{
+    background-color:#ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Sabon";
+    color: white;
+}
+.product-container{
+    padding-top: 3vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    width: 18%;
+    background-color: #a8b7c7;
+    border-radius: 1vw;
+    transition: transform 0.3s ease-in-out
+}
+.product-container:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    background-color: #07033b;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    color: white;
+}
+.product-container i{
+    font-size: 5vw;
+    padding-bottom: 3vw;
+}
+.product-container p{
+    padding: 25vw
+}
+#more-product{
+    border: none;
+    color: #002d5e;
+    border: solid 0.5vw #002d5e;
+    border-radius: 15px;
+    padding: 0.5vw 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#more-product:hover{
+    background-color: #002d5e;
+    color: white;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+#contact-us{
+    font-family: 'Gabriel Sans Cd-Trial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 10px;
+}
+.contact-background{
+    background-color: #033366;
+}
+.contact-us-container-wrap{
+    padding-top: 1vw;
+    max-width: 110vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.contact-us-container{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+    width: 18%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out
+}
+.contact-us-container:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+@media only screen and (max-width: 425px) {
+    #about-us{
+        color: white;
+        text-align: center;
+        margin: auto;
+        max-width: 290px;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .product-container-wrap{
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        margin: 0 auto;
+        max-width: 350px;
+        display: flex;
+    }
+    .product-container i{
+        font-size: 9vw;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+    }
+    .product-container{
+        padding-top: 3vw;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-size: 2vw;
+        width: 18%;
+        background-color: #a8b7c7;
+        transition: transform 0.3s ease-in-out
+    }
+    #banner{
+        background-image: url(../image/main.background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Sabon";
+        font-size: 2.5vw;
+        text-shadow: 5px 5px #01172F;
+        color: white;
+        width: 100%;
+        height: 25vw;
+        border-bottom: solid 25px #021f3f;
+    }
+    #banner h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vw;
+    }
+    .main-nav-wrap{
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: 0;
+        display: block;
+    }
+    .nav-menu-container{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+    }
+    .nav-logo-container{
+        display: flex;
+        color: white;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    .nav-logo-container img{
+        position: absolute;
+        width: 16vw;
+    }
+    #logo{
+        margin-bottom: 4.5vw;
+    }
+    .nav-menu-container ul li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1.4vw 1.6vw;
+        text-decoration: none;
+        font-size: 2vw;
+    }
+    #companyname{
+        padding-top: 1vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+    }
+    #more-product{
+        color: #002d5e;
+        border: solid 0.5vw #002d5e;
+        border-radius: 1vw;
+        padding: 0.5vw 1.5vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 5vw;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    .contact-us-container-wrap{
+        padding-top: 1vw;
+        max-width: 80vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+    }
+    .contact-us-container{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2vw;
+        width: 18%;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out
+    }
+    .dropbtn {
+        background-color:#033366;
+        display: block;
+        font-size: 2vw;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 2vw;
+}
+  }
